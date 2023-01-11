@@ -26,19 +26,19 @@
                 {{ @csrf_field() }}   
                 <div class="mb-3">
                   <label for="userEmail" class="form-label">username</label>
-                  <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                  <input type="text" required  name="username" class="form-control" id="username" placeholder="Username">
                 </div>             
                 <div class="mb-3">
                   <label for="userEmail" class="form-label">Email address</label>
-                  <input type="email" name="email" class="form-control" id="userEmail" placeholder="Email">
+                  <input type="email" required name="email" class="form-control" id="userEmail" placeholder="Email">
                 </div>
                 <div class="mb-3">
                   <label for="userPassword" class="form-label">Password</label>
-                  <input type="password" name="password" class="form-control" id="userPassword" autocomplete="current-password" placeholder="Password">
+                  <input type="password" required name="password" class="form-control" id="userPassword" autocomplete="current-password" placeholder="Password">
                 </div>
                 <div class="mb-3">
                   <label for="userEmail" class="form-label">Phone</label>
-                  <input type="text" name="phone" class="form-control" id="userEmail" placeholder="Phone">
+                  <input type="text" required name="phone" class="form-control" id="userEmail" placeholder="Phone">
                 </div>
                 <div class="form-check mb-3">
                   <input type="checkbox" class="form-check-input" id="authCheck">
