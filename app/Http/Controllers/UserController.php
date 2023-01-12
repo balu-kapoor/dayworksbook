@@ -72,7 +72,7 @@ class UserController extends Controller
             $username = $request->username;
             // $user = app('firebase.firestore')->database()->collection('users') 
             // ->where('username','==',$username); 
-            $if_exists = $user->documents();
+            // $if_exists = $user->documents();
             // dd($test->rows());
             // if(empty($if_exists->rows())) {
             //     dd('dont');
