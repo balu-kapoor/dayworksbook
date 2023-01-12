@@ -8,9 +8,10 @@
 @include('includes.nav')  
       <div class="page-content">    
 <div class="row">
-  <div class="col-md-6 grid-margin stretch-card">
+  <div class="col-md-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
+        <div class="container">
         <h6>Have Reference Number?</h6>
         <input type="text" name="reference_code" class="form-control" id="exampleInputUsername1" autocomplete="off" placeholder="Reference Number">
         <h6 class="m-3">OR</h6>
@@ -39,12 +40,25 @@
           </div>
           <button type="submit" class="btn btn-primary me-2">Submit</button>
         </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
       </div>
+      <style>
+        /* .stretch-card>.card {
+          display: flex;
+          align-items: center;
+        }
+        a.sidebar-toggler {
+            visibility: hidden!important;
+        }
+        .card-body {
+            box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+        } */
+      </style>
       @include('includes.footer')
          </div>
 @stop

@@ -13,14 +13,14 @@ class UserController extends Controller
 
     public function index(Request $request) {
         if ($request->session()->has('user')) {
-            return view('jobs-list');
+            return redirect('list-jobs');
         }
             return view('welcome');        
     }
 
     public function login(Request $request) {
         if ($request->session()->has('user')) {
-            return view('jobs-list');
+            return redirect('list-jobs');
         }
         return view('login');
     }
@@ -225,11 +225,11 @@ class UserController extends Controller
             // $pdf = PDF::loadView('pdf_view');
           
             // return $pdf->download('invoice.pdf');
-            $html = view('pdf_view', $items)->render();
-            return @\PDF::loadHTML($html, 'utf-8')->stream(); 
+            // $html = view('pdf_view', $items)->render();
+            // return @\PDF::loadHTML($html, 'utf-8')->stream(); 
             // $pdf->stream("dompdf_out.pdf",$items);
             
-            return false;
+            // return false;
             return view('pdf_view');        
         } else {
             $jobRef->set([                    

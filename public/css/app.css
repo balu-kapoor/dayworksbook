@@ -11,8 +11,13 @@
     border-radius: 5px;
 }
 a:hover {
-    background: #e18a22cf;
+    background: none;
 }
 form.search-form {
     visibility: hidden !important;
+}
+a.float-end.create:hover {
+    background: #fff;
+    border: 1px solid;
+    color: #000;
 }

@@ -55,6 +55,7 @@
           <input class="btn btn-primary me-2" type="submit" name="send" value="Send Pdf" />        
           <!-- <button type="submit" class="btn btn-primary me-2">Preview Pdf</button>
           <button type="submit" class="btn btn-primary me-2">Send Pdf</button> -->
+        </form>
       </div>
     </div>
   </div>

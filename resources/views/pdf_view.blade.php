@@ -109,7 +109,7 @@ table#header tr {
         </tr>   
         <tr>
           <th>Works: </th>
-          <td style="word-break: break-all;">{{ $job[4] ?? ''}}</td>
+          <td style="word-break: break-all;width: 100%">{{ $job[4] ?? ''}}</td>
         </tr>
       </tbody>
     </table>
