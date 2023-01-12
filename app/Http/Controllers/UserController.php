@@ -176,7 +176,7 @@ class UserController extends Controller
         $marterial = $request->marterial;
         $client_name = $request->client_name;
         $position = $request->position;
-        
+        $worker_email = $request->worker_mail;
         
         $user_id = $request->session()->get('user');
         $user = app('firebase.firestore')->database()->collection('users') 
@@ -256,7 +256,7 @@ class UserController extends Controller
             $data = ['link' => $data];
             \Storage::put('public/pdf/'.$id.'.pdf', $pdf->output());
             \Mail::send('mail', $data, function($message) {
-                $message->to('bkapoor11@gmail.com', 'Sign new pdf')->subject
+                $message->to($worker_mail, 'Sign new pdf')->subject
                    ('Basic Testing Mail');
                 $message->from('dayworksbook@gmail.com','Day Works Book');
             });            
