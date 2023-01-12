@@ -167,7 +167,7 @@ class UserController extends Controller
         $id = explode('/', $jobRef->name());
         $id = end($id);
 // dd($request->session()->get('user_id'));
-
+// dd( $request->worker_mail);
         $name = $request->name;
         $date = $request->date;
         $client = $request->client;
@@ -255,7 +255,8 @@ class UserController extends Controller
             $data = url('').'/'.$link;
             $data = ['link' => $data];
             \Storage::put('public/pdf/'.$id.'.pdf', $pdf->output());
-            \Mail::send('mail', $data, function($message) {
+            // dd($data);
+            \Mail::send('mail', $data, function($message) use ($worker_mail){
                 $message->to($worker_mail, 'Sign new pdf')->subject
                    ('Basic Testing Mail');
                 $message->from('dayworksbook@gmail.com','Day Works Book');
