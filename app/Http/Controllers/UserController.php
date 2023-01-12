@@ -176,7 +176,7 @@ class UserController extends Controller
         $marterial = $request->marterial;
         $client_name = $request->client_name;
         $position = $request->position;
-        $worker_email = $request->worker_mail;
+        $worker_mail = $request->worker_mail;
         
         $user_id = $request->session()->get('user');
         $user = app('firebase.firestore')->database()->collection('users') 
