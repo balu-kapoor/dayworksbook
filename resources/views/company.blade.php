@@ -3,7 +3,7 @@
 @section('title', 'Company')
  
 @section('content')
-@include('includes.sidebar')
+<!-- @include('includes.sidebar') -->
 <div class="page-wrapper">
 @include('includes.nav')  
       <div class="page-content">    
@@ -34,8 +34,8 @@
             <input type="text" class="form-control" name="email" id="exampleInputPassword1" autocomplete="off" placeholder="Company Email">
           </div>
           <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Company Reference Code</label>
-            <input type="text" class="form-control" name="reference" id="exampleInputPassword1" autocomplete="off" placeholder="Company Reference Code">
+          <label for="exampleInputPassword1" class="form-label">Company ABN Number</label>
+            <input type="text" class="form-control" name="reference" id="exampleInputPassword1" autocomplete="off" placeholder="Company ABN Number">
           </div>
           <button type="submit" class="btn btn-primary me-2">Submit</button>
         </form>

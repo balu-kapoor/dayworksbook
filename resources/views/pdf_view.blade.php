@@ -86,8 +86,7 @@ table#header tr {
   <img id="pdf_img" src="./images/logo.png" alt="">        
   <div class="table-responsive">
     <table id="header" class="table table-striped" style="">     
-      <tbody>
-    
+      <tbody>    
         <tr>
           <th>Job/Site name: </th>
           <td>
@@ -110,7 +109,7 @@ table#header tr {
         </tr>   
         <tr>
           <th>Works: </th>
-          <td>{{ $job[4] ?? ''}}</td>
+          <td style="word-break: break-all;">{{ $job[4] ?? ''}}</td>
         </tr>
       </tbody>
     </table>

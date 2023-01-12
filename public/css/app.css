@@ -13,3 +13,6 @@
 a:hover {
     background: #e18a22cf;
 }
+form.search-form {
+    visibility: hidden !important;
+}
